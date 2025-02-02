@@ -1,4 +1,4 @@
-# Introdução
+# Laboratório 2
 Este código está organizado por níveis, onde cada nível representa uma funcionalidade diferente. A estrutura segmentada permite demonstrar, de forma progressiva, várias operações básicas em C, tais como leitura de dados, estruturas condicionais, ciclos de repetição e cálculos aritméticos. Cada nível lida com uma tarefa distinta, facilitando o estudo e a manutenção do código.
 
 ## Nível 1

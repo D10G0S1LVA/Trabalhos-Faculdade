@@ -15,30 +15,30 @@ void voltar_menu_inicial();
 
 
                 void menu1();
-                //Operações com números primos, múltiplos e divisores
+                //OperaÃ§Ãµes com nÃºmeros primos, mÃºltiplos e divisores
 
-//1. Verificar se um número é primo;
+//1. Verificar se um nÃºmero Ã© primo;
 void TesteNumerosPrimos();
 
-//2. Mostrar e contar os números primos existentes num intervalo fechado;
+//2. Mostrar e contar os nÃºmeros primos existentes num intervalo fechado;
 void MostrarEContarNumerosPrimosAte();
 
-//3. Mostrar o somatório dos números primos existentes num intervalo fechado;
+//3. Mostrar o somatÃ³rio dos nÃºmeros primos existentes num intervalo fechado;
 void SomatorioDeNumerosPrimosNoIntervalo();
 
-//4. Mostrar o primeiro número primo que seja maior ou igual a um valor inserido;
+//4. Mostrar o primeiro nÃºmero primo que seja maior ou igual a um valor inserido;
 void MostrarPrimoMaiorOuIgualAoNumero();
 
-//5. Mostrar o número primo mais próximo de um valor inserido pelo utilizador;
+//5. Mostrar o nÃºmero primo mais prÃ³ximo de um valor inserido pelo utilizador;
 void NumeroPrimoMaisPertoDoIntroduzido();
 
-//6. Decompor um número nos seus fatores primos;
+//6. Decompor um nÃºmero nos seus fatores primos;
 void Decomposicao();
 
-//7. Calcular o máximo divisor comum de dois números;
+//7. Calcular o mÃ¡ximo divisor comum de dois nÃºmeros;
 void CalcularMDC();
 
-//8. Calcular o menor múltiplo comum de dois números;
+//8. Calcular o menor mÃºltiplo comum de dois nÃºmeros;
 void CalcularMMC();
 
 
@@ -54,13 +54,13 @@ void ColocarNumVetor();
 //2. Mostrar o vetor de inteiros;
 void MostrarVetor();
 
-//3. Preencher um vetor de inteiros com números aleatórios;
+//3. Preencher um vetor de inteiros com nÃºmeros aleatÃ³rios;
 void PreencherVetorRandom();
 
 //4. Verificar se um valor existe no vetor;
 void EstaAiAlgumNumero();
 
-//5. Mostrar o maior elemento do vetor e a sua posição;
+//5. Mostrar o maior elemento do vetor e a sua posiÃ§Ã£o;
 void MaiorNumeroVetor();
 
 //6. Ordenar os elementos do vetor por ordem crescente;
@@ -74,18 +74,18 @@ void MaiorParaMenorVetor();
 
 
                 void menu3();
-                //Gestão de Contactos
+                //GestÃ£o de Contactos
 
 //1. Criar Nome de Pessoa (nome);
 void NomeDePessoa();
 
-//2. Inserir um novo contacto, sempre associado à pessoa;
+//2. Inserir um novo contacto, sempre associado Ã  pessoa;
 void NomeAContacto();
 
-//3. Procurar informação de um contacto (inserir contacto e mostrar a pessoa);
+//3. Procurar informaÃ§Ã£o de um contacto (inserir contacto e mostrar a pessoa);
 void SeachAndShow();
 
-//4. Alterar informação de um contacto (alterar contacto ou alterar a pessoa a quem pertence);
+//4. Alterar informaÃ§Ã£o de um contacto (alterar contacto ou alterar a pessoa a quem pertence);
 void AlterarContacto();
 
 //5. Listar todos os contactos;

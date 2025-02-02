@@ -90,7 +90,7 @@ void menu1()
     printf("\n\t-0.Voltar ao menu anterior.");
     printf("\nEscolha outra vez outro numero:");
 
-    //Para o menu, utilizamos a funÁ„o Switch() para selecionar a opÁ„o que prentendemos
+    //Para o menu, utilizamos a fun√ß√£o Switch() para selecionar a op√ß√£o que prentendemos
     char escolha;
     scanf(" %c", &escolha);
     switch (escolha)
@@ -123,7 +123,7 @@ void menu1()
     }
     case '5':
     {
-        printf("\nOpcao Escolhida:\t5. Mostrar o numero primo mais prÛximo de um valor inserido pelo utilizador;");
+        printf("\nOpcao Escolhida:\t5. Mostrar o numero primo mais pr√≥ximo de um valor inserido pelo utilizador;");
         NumeroPrimoMaisPertoDoIntroduzido();
         break;
     }
@@ -160,14 +160,14 @@ void TesteNumerosPrimos()
     int numero, contador, resultado = 0;
     scanf("%d", &numero);
 
-    //VerificaÁ„o se numero introduzido È maior que 2, se n„o for, o programa pede de novo um n˙mero
+    //Verifica√ß√£o se numero introduzido √© maior que 2, se n√£o for, o programa pede de novo um n√∫mero
     while (numero < 2)
     {
         printf("Erro\nIndroduz outro numero:  ");
         scanf("%d", &numero);
     }
 
-    //Fazer o teste se o numero em que se encontra na variavel "numero" È primo
+    //Fazer o teste se o numero em que se encontra na variavel "numero" √© primo
     for (contador = 2; contador <= numero / 2; contador++)
     {
         if (numero % contador == 0)
@@ -182,7 +182,7 @@ void TesteNumerosPrimos()
         printf("O numero escolhido, que foi o %d, eh numero Primo", numero);
     }
 
-    //Se o numero n„o for primo
+    //Se o numero n√£o for primo
     else
     {
         printf("O numero escolhido, que foi o %d, nao eh numero Primo", numero);
@@ -199,19 +199,19 @@ void MostrarEContarNumerosPrimosAte(){
     scanf("%d", &numero2);
     puts("--------------------------------------------------------");
 
-    //VerificaÁ„o se o segundo numero introduzido È menor do que dois
+    //Verifica√ß√£o se o segundo numero introduzido √© menor do que dois
     if(numero2 < 2)
     {
         printf("Erro: Nao existem numeros primos ate %d\n", numero2);
         exit(0);
     }
 
-    //Caso isso n„o se verifique
+    //Caso isso n√£o se verifique
     printf("\nOs numeros primos sao: \n");
 
     ManterNumero1 = numero1;
 
-    //VerificaÁ„o de n˙meros primos
+    //Verifica√ß√£o de n√∫meros primos
     if( numero1 % 2 == 0)
     {
         numero1++;
@@ -235,7 +235,7 @@ void MostrarEContarNumerosPrimosAte(){
         }
 
         //Cada vez que se verifique um numero primo no intervalo,
-        //È incrementado um valor ‡ variavel contador
+        //√© incrementado um valor √† variavel contador
         if(SerPrimo == 0)
         {
 
@@ -285,7 +285,7 @@ void SomatorioDeNumerosPrimosNoIntervalo()
 
         }
 
-        // Se o numero dentro da variavel 'Contador' for primo, adicionar ao somatÛrio
+        // Se o numero dentro da variavel 'Contador' for primo, adicionar ao somat√≥rio
 
         if(SerPrimo == 1)
         {
@@ -318,7 +318,7 @@ void MostrarPrimoMaiorOuIgualAoNumero()
 
         SerPrimo = 0;
 
-        //IncrementaÁ„o da variavel TestePrimo fazendo a operaÁ„o com o contador
+        //Incrementa√ß√£o da variavel TestePrimo fazendo a opera√ß√£o com o contador
         for(TestePrimo = 2; TestePrimo < Contador; TestePrimo++)
         {
 
@@ -363,7 +363,7 @@ void NumeroPrimoMaisPertoDoIntroduzido()
     {
 
         SerPrimo = 0;
-        //IncrementaÁ„o da variavel TestePrimo fazendo a operaÁ„o com o contador
+        //Incrementa√ß√£o da variavel TestePrimo fazendo a opera√ß√£o com o contador
         for(TestePrimo = 2; TestePrimo < Contador; TestePrimo++)
         {
 
@@ -401,7 +401,7 @@ void Decomposicao()
     //Enquanto o contador for menor que o numero introduzido
     for (contador=1; contador<=NumEscolha; contador++)
     {
-        //faz a divis„o do contador pelo numero escolhido
+        //faz a divis√£o do contador pelo numero escolhido
         if (NumEscolha % contador ==0)
         {
 
@@ -426,12 +426,12 @@ void CalcularMDC()
     puts("-----------------------------");
     scanf("%d", &Numero2);
 
-    //A vari·vel contador n„o pode ser maior do que o numero 1 nem maior do que o numero 2 inserido
+    //A vari√°vel contador n√£o pode ser maior do que o numero 1 nem maior do que o numero 2 inserido
     for(Contador = 1; Contador <= Numero1 && Contador <= Numero2; Contador++)
     {
 
-        //A divis„o do numero 1 e numero 2 der resto 0 simultaneamente, sÛ assim È que se pode
-        //considerar um M·ximo Divisor Comum
+        //A divis√£o do numero 1 e numero 2 der resto 0 simultaneamente, s√≥ assim √© que se pode
+        //considerar um M√°ximo Divisor Comum
         if(Numero1 % Contador == 0 && Numero2 % Contador == 0)
             MDC = Contador;
 
@@ -488,7 +488,7 @@ void menu2()
 {
     printf("Operacoes com numeros primos, multiplos e divisores");
     printf("\n2. Vetores,");
-    printf("\n\t-1. Inserir e mostrar os respetivos valores num vetor de inteiros e mostr·-los;");
+    printf("\n\t-1. Inserir e mostrar os respetivos valores num vetor de inteiros e mostr√°-los;");
     printf("\n\t-2. Preencher um vetor de inteiros com numeros aleatorios;");
     printf("\n\t-3. Verificar se um valor existe no vetor;");
     printf("\n\t-4. Mostrar o maior elemento do vetor e a sua posicao;");
@@ -501,13 +501,13 @@ void menu2()
     {
     case '1':
     {
-        printf("\n\nOpcao Escolhida:\t1. Inserir valores num vetor de inteiros e mostr·-los;");
+        printf("\n\nOpcao Escolhida:\t1. Inserir valores num vetor de inteiros e mostr√°-los;");
         ColocarNumVetor();
         break;
     }
     case '2':
     {
-        printf("\n\nOpcao Escolhida:\t2. Preencher um vetor de inteiros com numeros aleatÛrios;");
+        printf("\n\nOpcao Escolhida:\t2. Preencher um vetor de inteiros com numeros aleat√≥rios;");
         PreencherVetorRandom();
         break;
     }
@@ -543,15 +543,15 @@ void ColocarNumVetor()
     scanf("%d", &valueArray);
     printf("\n\nIntroduza %d numeros:\n", valueArray);
 
-    //inicializaÁ„o do array com o valor inserido pelo utilizador
+    //inicializa√ß√£o do array com o valor inserido pelo utilizador
     int arrayDeNumeros[valueArray] [256];
 
-    //enquanto o contador I n„o chegar ao valor introduzido pelo utilizador
-    //o programa est· sempre a pedir numeros
+    //enquanto o contador I n√£o chegar ao valor introduzido pelo utilizador
+    //o programa est√° sempre a pedir numeros
     for (i = 0; i < valueArray; i++)
         scanf("%s", arrayDeNumeros[i]);
 
-    //Quando contador for igual ao valor inserido, o programa j· tem tudo o que precisava
+    //Quando contador for igual ao valor inserido, o programa j√° tem tudo o que precisava
     //agora mostra o que tem dentro do Array, nesta caso, de nome ValueArray
     for (int c = 0, i=0; c < valueArray, i<valueArray; c++, i++)
     {
@@ -569,10 +569,10 @@ void PreencherVetorRandom()
     scanf("%d", &randomAte);
     int random[randomAte];
 
-    //Encher o Array atÈ ‡ posiÁ„o que o utilizador quer
+    //Encher o Array at√© √† posi√ß√£o que o utilizador quer
     for(i=1; i<=randomAte; i++)
     {
-        random[randomAte]=rand(); //funÁ„o para gerar numeros aleatorios
+        random[randomAte]=rand(); //fun√ß√£o para gerar numeros aleatorios
         printf("\nO que esta na posicao [%d] do array e: %d", i, random[randomAte]);
     }
     voltar_menu_inicial();
@@ -597,15 +597,15 @@ void EstaAiAlgumNumero()
     printf("\nIntroduza um numero para fazer a verificacao: ");
     scanf("%d", &numeroEscolhido);
 
-    //Percorrer o array · procura do valor
+    //Percorrer o array √° procura do valor
     for(i=0; i<dimensaoArray; i++)
     {
-        //Se existe, incrementa um · variavel existe
+        //Se existe, incrementa um √° variavel existe
         if(numeroEscolhido==array[i])
             existe++;
     }
 
-    if(existe>0) //Se a variavel existe continuar a 0, È porque o numero n„o existe no Array
+    if(existe>0) //Se a variavel existe continuar a 0, √© porque o numero n√£o existe no Array
     {
         printf("Esse numero %d existe", numeroEscolhido);
     }
@@ -616,7 +616,7 @@ void EstaAiAlgumNumero()
 
 void MaiorNumeroVetor()
 {
-    //declaraÁ„o de variaveis
+    //declara√ß√£o de variaveis
     int array[30];
     int i, dimensaoArray;
     int ValorMaisAlto=0;
@@ -626,15 +626,15 @@ void MaiorNumeroVetor()
     printf("\nIntroduza quantos numeros quer colocar: ");
     scanf("%d", &dimensaoArray);
 
-    //enquanto o contador I n„o chegar ao valor introduzido pelo utilizador
-    //o programa est· sempre a pedir numeros
+    //enquanto o contador I n√£o chegar ao valor introduzido pelo utilizador
+    //o programa est√° sempre a pedir numeros
     printf("\nIntroduza os %d numeros\n", dimensaoArray);
     for(i=0; i<dimensaoArray; i++)
     {
         scanf("%d", &array[i]);
     }
 
-    //Quando contador for igual ao valor inserido, o programa j· tem tudo o que precisava
+    //Quando contador for igual ao valor inserido, o programa j√° tem tudo o que precisava
     //agora mostra o que tem dentro do Array, nesta caso, de nome ValueArray
     for(i=0; i<dimensaoArray; i++)
     {

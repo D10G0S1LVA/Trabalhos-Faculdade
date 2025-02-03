@@ -1,0 +1,292 @@
+
+**** 09/01/21 10:47:12 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * C:\Users\Diogo Silva\Desktop\Projeto fim de curso\Simulao\Projeto.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.2
+* Wed Sep 01 10:41:57 2021
+
+
+
+** Analysis setup **
+.tran 0ns 1ms
+.OP 
+.STMLIB "Projeto.stl"
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\PSPice\PSpice\PSpice.ini:
+.lib "nom.lib"
+
+.INC "Projeto.net"
+
+
+
+**** INCLUDING Projeto.net ****
+* Schematics Netlist *
+
+
+
+C_C1         $N_0001 Output  30uF  
+R_R         0 $N_0002  500  
+R_Rin         0 $N_0001  1k  
+R_RF         $N_0001 Output  600  
+X_U4         $N_0002 $N_0001 $N_0003 0 Output LM741
+V_V1         $N_0003 0 5V
+R_Rfrs         $N_0002 $N_0003  300  
+
+**** RESUMING Projeto.cir ****
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END
+
+**** 09/01/21 10:47:12 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * C:\Users\Diogo Silva\Desktop\Projeto fim de curso\Simulao\Projeto.sch
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U4.x_lm741.dx X_U4.x_lm741.dy 
+          IS  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03 
+         CJO                   10.000000E-12 
+
+
+**** 09/01/21 10:47:12 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * C:\Users\Diogo Silva\Desktop\Projeto fim de curso\Simulao\Projeto.sch
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U4.x_lm741.qx 
+               NPN             
+          IS  800.000000E-18 
+          BF   93.75         
+          NF    1            
+          BR    1            
+          NR    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 09/01/21 10:47:12 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * C:\Users\Diogo Silva\Desktop\Projeto fim de curso\Simulao\Projeto.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(Output)    4.8143 ($N_0001)    3.0089                   ($N_0002)    3.1250    
+
+($N_0003)    5.0000                   (X_U4.x_lm741.6)   -1.4099                
+
+(X_U4.x_lm741.7)    6.8445            (X_U4.x_lm741.8)    6.8445                
+
+(X_U4.x_lm741.9)    0.0000            (X_U4.x_lm741.10)    2.4870               
+
+(X_U4.x_lm741.11)    4.9976           (X_U4.x_lm741.12)    4.9228               
+
+(X_U4.x_lm741.13)    2.4878           (X_U4.x_lm741.14)    2.5140               
+
+(X_U4.x_lm741.53)    4.0000           (X_U4.x_lm741.54)    1.0000               
+
+(X_U4.x_lm741.90)   40.6040           (X_U4.x_lm741.91)   40.0000               
+
+(X_U4.x_lm741.92)  -40.0000           (X_U4.x_lm741.99)    2.5000           
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         3.105E-02
+    X_U4.x_lm741.vb  -1.410E-05
+    X_U4.x_lm741.vc  -3.760E-02
+    X_U4.x_lm741.ve   3.752E-12
+    X_U4.x_lm741.vlim   4.060E-02
+    X_U4.x_lm741.vlp   1.119E-05
+    X_U4.x_lm741.vln  -8.061E-11
+
+    TOTAL POWER DISSIPATION  -1.18E-01  WATTS
+
+
+**** 09/01/21 10:47:12 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * C:\Users\Diogo Silva\Desktop\Projeto fim de curso\Simulao\Projeto.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** VOLTAGE-CONTROLLED CURRENT SOURCES
+
+
+NAME         X_U4.x_lm741.ga         X_U4.x_lm741.gcm      
+I-SOURCE     1.410E-05              -7.773E-11            
+
+
+**** VOLTAGE-CONTROLLED VOLTAGE SOURCES
+
+
+NAME         X_U4.x_lm741.egnd     
+V-SOURCE     2.500E+00            
+I-SOURCE    -4.060E-02            
+
+
+**** CURRENT-CONTROLLED CURRENT SOURCES
+
+
+NAME         X_U4.x_lm741.fb       
+I-SOURCE    -8.406E-02            
+
+
+**** CURRENT-CONTROLLED VOLTAGE SOURCES
+
+
+NAME         X_U4.x_lm741.hlim     
+V-SOURCE     4.060E+01            
+I-SOURCE    -1.119E-05            
+
+
+**** DIODES
+
+
+NAME         X_U4.x_lm741.dc         X_U4.x_lm741.de       
+MODEL        X_U4.x_lm741.dy         X_U4.x_lm741.dy       
+ID           3.76E-02               -3.82E-12             
+VD           8.14E-01               -3.81E+00             
+REQ          6.88E-01                1.00E+12             
+CAP          1.86E-11                4.56E-12             
+
+NAME         X_U4.x_lm741.dlp        X_U4.x_lm741.dln      
+MODEL        X_U4.x_lm741.dx         X_U4.x_lm741.dx       
+ID           1.12E-05               -8.06E-11             
+VD           6.04E-01               -8.06E+01             
+REQ          2.31E+03                1.00E+12             
+CAP          0.00E+00                0.00E+00             
+
+NAME         X_U4.x_lm741.dp       
+MODEL        X_U4.x_lm741.dx       
+ID          -5.00E-12             
+VD          -5.00E+00             
+REQ          1.00E+12             
+CAP          0.00E+00             
+
+
+**** BIPOLAR JUNCTION TRANSISTORS
+
+
+NAME         X_U4.x_lm741.q1         X_U4.x_lm741.q2       
+MODEL        X_U4.x_lm741.qx         X_U4.x_lm741.qx       
+IB           4.80E-09                1.55E-07             
+IC           4.50E-07                1.45E-05             
+VBE          5.21E-01                6.11E-01             
+VBC         -1.99E+00               -1.80E+00             
+VCE          2.51E+00                2.41E+00             
+BETADC       9.38E+01                9.38E+01             
+GM           1.74E-05                5.63E-04             
+RPI          5.39E+06                1.67E+05             
+RX           0.00E+00                0.00E+00             
+RO           1.00E+12                1.00E+12             
+CBE          0.00E+00                0.00E+00             
+CBC          0.00E+00                0.00E+00             
+CJS          0.00E+00                0.00E+00             
+BETAAC       9.38E+01                9.38E+01             
+CBX/CBX2     0.00E+00                0.00E+00             
+FT/FT2       2.77E+14                8.95E+15             
+
+
+**** 09/01/21 10:47:12 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * C:\Users\Diogo Silva\Desktop\Projeto fim de curso\Simulao\Projeto.sch
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(Output)    4.8143 ($N_0001)    3.0089                   ($N_0002)    3.1250    
+
+($N_0003)    5.0000                   (X_U4.x_lm741.6)   -1.4099                
+
+(X_U4.x_lm741.7)    6.8445            (X_U4.x_lm741.8)    6.8445                
+
+(X_U4.x_lm741.9)    0.0000            (X_U4.x_lm741.10)    2.4870               
+
+(X_U4.x_lm741.11)    4.9976           (X_U4.x_lm741.12)    4.9228               
+
+(X_U4.x_lm741.13)    2.4878           (X_U4.x_lm741.14)    2.5140               
+
+(X_U4.x_lm741.53)    4.0000           (X_U4.x_lm741.54)    1.0000               
+
+(X_U4.x_lm741.90)   40.6040           (X_U4.x_lm741.91)   40.0000               
+
+(X_U4.x_lm741.92)  -40.0000           (X_U4.x_lm741.99)    2.5000           
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         3.105E-02
+    X_U4.x_lm741.vb  -1.410E-05
+    X_U4.x_lm741.vc  -3.760E-02
+    X_U4.x_lm741.ve   3.752E-12
+    X_U4.x_lm741.vlim   4.060E-02
+    X_U4.x_lm741.vlp   1.119E-05
+    X_U4.x_lm741.vln  -8.061E-11
+
+    TOTAL POWER DISSIPATION  -1.18E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

@@ -1,0 +1,24 @@
+* C:\Users\Diogo Silva\Desktop\Projeto fim de curso\Simulação\Projeto.sch
+
+* Schematics Version 9.2
+* Fri Sep 03 01:11:07 2021
+
+
+
+** Analysis setup **
+.ac LIN 100 1 100
+.tran 0ns 500ms
+.OP 
+.STMLIB "Projeto.stl"
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\PSPice\PSpice\PSpice.ini:
+.lib "nom.lib"
+
+.INC "Projeto.net"
+
+
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END

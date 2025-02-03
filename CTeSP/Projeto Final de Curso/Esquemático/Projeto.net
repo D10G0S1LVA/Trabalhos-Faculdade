@@ -1,0 +1,11 @@
+* Schematics Netlist *
+
+
+
+C_C3         $N_0001 Output  30uF  
+R_RF         $N_0001 Output  600  
+X_U4         $N_0002 $N_0001 $N_0003 0 Output LM741
+R_Rin         0 $N_0001  1K  
+R_Rm         0 $N_0002  500  
+R_Rfrs         $N_0002 $N_0003  300  
+V_V21         $N_0003 0 DC 0V AC 5v 

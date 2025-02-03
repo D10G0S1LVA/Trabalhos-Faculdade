@@ -1,0 +1,12 @@
+* Schematics Subcircuit *
+
+
+.SUBCKT Projeto 
+X_U4         $N_0001 $N_0002 $N_0003 0 Output LM741
+R_R         0 $N_0001  500  
+R_Rfrs         $N_0001 $N_0003  300  
+R_RF         $N_0002 Output  600  
+V_V1         $N_0003 0 5V
+R_Rin         0 $N_0002  1000  
+C_C3         0 $N_0002  30uF  
+.ENDS    Projeto

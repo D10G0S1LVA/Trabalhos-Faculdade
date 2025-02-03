@@ -9,5 +9,5 @@ O dispositivo de envio e de receção foi o ESP8266.
 
 Montagem do ESP8266 na Breadboard
 
-![A montagem do ESP8266 na Breadboard ficou deste modo](![image](https://github.com/user-attachments/assets/c5436eb5-f15b-4bde-a6da-bebe85bbd198)
+![A montagem do ESP8266 na Breadboard ficou deste modo](![image](https://github.com/user-attachments/assets/32738b2b-40d3-4a50-a21a-49ee9b977177)
 )

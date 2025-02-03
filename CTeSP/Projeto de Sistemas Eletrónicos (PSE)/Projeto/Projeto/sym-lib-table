@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Projeto_Diogo_Silva_190204007")(type "Legacy")(uri "${KIPRJMOD}/Projeto_Diogo_Silva_190204007.lib")(options "")(descr ""))
+  (lib (name "GPU_Projeto-rescue")(type "KiCad")(uri "${KIPRJMOD}/GPU_Projeto-rescue.kicad_sym")(options "")(descr ""))
+)

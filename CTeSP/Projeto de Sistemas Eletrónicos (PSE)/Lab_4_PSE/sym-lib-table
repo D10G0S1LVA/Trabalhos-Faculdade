@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "VU Meter")(type "Legacy")(uri "${KIPRJMOD}/VU Meter.lib")(options "")(descr ""))
+  (lib (name "Lab-4-PSE-rescue")(type "Legacy")(uri "${KIPRJMOD}/Lab 4 PSE-rescue.lib")(options "")(descr ""))
+  (lib (name "Lab 4 PSE-rescue")(type "KiCad")(uri "${KIPRJMOD}/Lab 4 PSE-rescue.kicad_sym")(options "")(descr ""))
+)

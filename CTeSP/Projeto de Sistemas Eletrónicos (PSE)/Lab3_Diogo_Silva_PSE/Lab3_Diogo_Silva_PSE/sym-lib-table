@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Lab3_Diogo_Silva-rescue)(type Legacy)(uri ${KIPRJMOD}/Lab3_Diogo_Silva-rescue.lib)(options "")(descr "")(disabled))
+  (lib (name Interface_Expansion)(type Legacy)(uri ${KIPRJMOD}/Interface_Expansion.lib)(options "")(descr ""))
+)

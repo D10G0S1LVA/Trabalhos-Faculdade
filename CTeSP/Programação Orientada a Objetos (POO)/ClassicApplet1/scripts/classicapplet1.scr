@@ -1,0 +1,10 @@
+//Test script for Applet 'ClassicApplet1'
+
+powerup;
+// Select ClassicApplet1 //aid/323DED63EE/DE
+0x00 0xA4 0x04 0x00 0X06 0X32 0X3D 0XED 0X63 0XEE 0XDF 0x7F;
+
+//Send the APDU here
+//0x80 0xCA 0x00 0x00 <length> <data> 0x7F;
+
+powerdown;

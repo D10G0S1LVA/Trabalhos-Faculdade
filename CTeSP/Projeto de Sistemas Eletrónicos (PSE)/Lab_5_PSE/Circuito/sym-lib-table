@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name AAA)(type Legacy)(uri ${KIPRJMOD}/AAA.lib)(options "")(descr ""))
+  (lib (name Lab5-Diogo_Silva-rescue)(type Legacy)(uri ${KIPRJMOD}/Lab5-Diogo_Silva-rescue.lib)(options "")(descr ""))
+)

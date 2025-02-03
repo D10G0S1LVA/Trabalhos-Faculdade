@@ -14,8 +14,13 @@ Dividiu-se o trabalho nas seguintes etapas:
 
 
 Imagem do circuito no *PSPice*
+
 ![circuito](https://github.com/user-attachments/assets/fb7c815b-6296-4496-a023-bd17a894cc46)
 
 
+
+
+
 Simulação em Tinkercad
+
 ![Simulação em Tinkercad](https://github.com/user-attachments/assets/0ce49935-e222-4770-bf66-3e2c6ca624c6)

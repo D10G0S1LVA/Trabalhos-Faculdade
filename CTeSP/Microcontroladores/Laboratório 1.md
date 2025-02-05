@@ -28,7 +28,8 @@ O microcontrolador foi programado em linguagem C, na plataforma Arduino IDE, par
 ![image](https://github.com/user-attachments/assets/9ca9b08b-3bcb-4411-baf7-e0f5f7a3ce26)
 
 
-Em conclusão, este trabalho foi útil para termos noções mínimas de Arduino, tanto a nível de circuitos como a nível da programação em C. 
+## 4.	Conclusão
+Este trabalho foi útil para termos noções mínimas de Arduino, tanto a nível de circuitos como a nível da programação em C. 
 Encontrámos algumas dificuldades, mas conseguimos superá-las graças à ajuda do professor responsável da disciplina
 Devido á situação atual, não foi possível a realização desta aula prática (Montagem dos componentes do circuito na placa do Arduino e Breadboard) fisicamente, de modo que foi necessário recorrer a um simulador (Tinkercad) fornecido pelo Professor Doutor.
 

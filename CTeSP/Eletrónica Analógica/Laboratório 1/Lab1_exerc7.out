@@ -1,0 +1,182 @@
+
+**** 04/16/20 11:57:44 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Diogo Silva\Desktop\VideoEscola\EA\Lab1_exerc7.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Thu Apr 16 11:57:39 2020
+
+
+
+** Analysis setup **
+.ac LIN 101 10 1.00K
+.tran 0ns 5ms 0 1ns
+.OP 
+.STMLIB "Lab1_exerc7.stl"
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Lab1_exerc7.net"
+
+**** INCLUDING Lab1_exerc7.net ****
+* Schematics Netlist *
+
+
+
+D_D1         $N_0001 $N_0002 D1N750 
+D_D2         $N_0001 0 D1N750 
+R_R1         $N_0003 $N_0002  1k  
+V_V2         $N_0003 0  
++SIN 0 10V 1kHz 0 0 0
+
+**** RESUMING Lab1_exerc7.cir ****
+.INC "Lab1_exerc7.als"
+
+
+
+**** INCLUDING Lab1_exerc7.als ****
+* Schematics Aliases *
+
+.ALIASES
+D_D1            D1(1=$N_0001 2=$N_0002 )
+D_D2            D2(1=$N_0001 2=0 )
+R_R1            R1(1=$N_0003 2=$N_0002 )
+V_V2            V2(+=$N_0003 -=0 )
+.ENDALIASES
+
+
+**** RESUMING Lab1_exerc7.cir ****
+.probe
+
+
+.END
+
+**** 04/16/20 11:57:44 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Diogo Silva\Desktop\VideoEscola\EA\Lab1_exerc7.sch
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N750          
+          IS  880.500000E-18 
+         ISR    1.859000E-09 
+          BV    4.7          
+         IBV     .020245     
+         NBV    1.6989       
+        IBVL    1.955600E-03 
+        NBVL   14.976        
+          RS     .25         
+         CJO  175.000000E-12 
+          VJ     .75         
+           M     .5516       
+        TBV1  -21.277000E-06 
+
+
+**** 04/16/20 11:57:44 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Diogo Silva\Desktop\VideoEscola\EA\Lab1_exerc7.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001) 384.3E-18                   ($N_0002) 18.02E-27                       
+
+($N_0003)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2         1.802E-29
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 04/16/20 11:57:44 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Diogo Silva\Desktop\VideoEscola\EA\Lab1_exerc7.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** DIODES
+
+
+NAME         D_D1        D_D2      
+MODEL        D1N750      D1N750    
+ID           1.36E-23    1.36E-23 
+VD           3.84E-16    3.84E-16 
+REQ          2.78E+07    2.78E+07 
+CAP          1.75E-10    1.75E-10 
+WARNING -- No AC sources -- AC Sweep ignored
+**** 04/16/20 11:57:44 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Diogo Silva\Desktop\VideoEscola\EA\Lab1_exerc7.sch
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001) 384.3E-18                   ($N_0002) 18.02E-27                       
+
+($N_0003)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2         1.802E-29
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME          471.88
+

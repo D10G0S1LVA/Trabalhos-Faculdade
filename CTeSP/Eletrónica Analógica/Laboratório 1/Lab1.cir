@@ -1,0 +1,22 @@
+* C:\Users\Diogo Silva\Desktop\VideoEscola\EA\Lab1.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Mon Apr 13 16:07:31 2020
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Lab1.net"
+.INC "Lab1.als"
+
+
+.probe
+
+
+.END

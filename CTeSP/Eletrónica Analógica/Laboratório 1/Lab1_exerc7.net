@@ -1,0 +1,9 @@
+* Schematics Netlist *
+
+
+
+D_D1         $N_0001 $N_0002 D1N750 
+D_D2         $N_0001 0 D1N750 
+R_R1         $N_0003 $N_0002  1k  
+V_V2         $N_0003 0  
++SIN 0 10V 1kHz 0 0 0

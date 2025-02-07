@@ -1,0 +1,170 @@
+
+**** 04/13/20 16:27:03 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Diogo Silva\Desktop\VideoEscola\EA\Lab1.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Mon Apr 13 16:07:31 2020
+
+
+
+** Analysis setup **
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Lab1.net"
+
+**** INCLUDING Lab1.net ****
+* Schematics Netlist *
+
+
+
+D_D2         $N_0001 $N_0002 D1N4002 
+D_D3         $N_0003 $N_0004 D1N4002 
+R_R5         $N_0006 $N_0005  1k  
+R_R3         $N_0007 $N_0006  1k  
+R_R1         0 $N_0007  1k  
+D_D5         $N_0008 $N_0006 D1N4002 
+R_R6         $N_0008 $N_0003  1k  
+R_R2         $N_0009 $N_0002  1k  
+D_D4         $N_0007 $N_0009 D1N4002 
+V_V1         $N_0001 0 10V
+V_V3         $N_0003 $N_0002 10V
+V_V2         $N_0004 $N_0005 10V
+
+**** RESUMING Lab1.cir ****
+.INC "Lab1.als"
+
+
+
+**** INCLUDING Lab1.als ****
+* Schematics Aliases *
+
+.ALIASES
+D_D2            D2(1=$N_0001 2=$N_0002 )
+D_D3            D3(1=$N_0003 2=$N_0004 )
+R_R5            R5(1=$N_0006 2=$N_0005 )
+R_R3            R3(1=$N_0007 2=$N_0006 )
+R_R1            R1(1=0 2=$N_0007 )
+D_D5            D5(1=$N_0008 2=$N_0006 )
+R_R6            R6(1=$N_0008 2=$N_0003 )
+R_R2            R2(1=$N_0009 2=$N_0002 )
+D_D4            D4(1=$N_0007 2=$N_0009 )
+V_V1            V1(+=$N_0001 -=0 )
+V_V3            V3(+=$N_0003 -=$N_0002 )
+V_V2            V2(+=$N_0004 -=$N_0005 )
+.ENDALIASES
+
+
+**** RESUMING Lab1.cir ****
+.probe
+
+
+.END
+
+**** 04/13/20 16:27:03 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Diogo Silva\Desktop\VideoEscola\EA\Lab1.sch
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4002         
+          IS   14.110000E-09 
+           N    1.984        
+         ISR  100.000000E-12 
+         IKF   94.81         
+          BV  100.1          
+         IBV   10            
+          RS     .03389      
+          TT    4.761000E-06 
+         CJO   51.170000E-12 
+          VJ     .3905       
+           M     .2762       
+
+
+**** 04/13/20 16:27:03 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Diogo Silva\Desktop\VideoEscola\EA\Lab1.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)   10.0000                   ($N_0002)    9.3332                       
+
+($N_0003)   19.3330                   ($N_0004)   22.4440                       
+
+($N_0005)   12.4440                   ($N_0006)   12.4440                       
+
+($N_0007)    6.2221                   ($N_0008)   13.1110                       
+
+($N_0009)    9.3331                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -6.222E-03
+    V_V3        -6.222E-03
+    V_V2        -1.429E-08
+
+    TOTAL POWER DISSIPATION   1.24E-01  WATTS
+
+
+**** 04/13/20 16:27:03 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Diogo Silva\Desktop\VideoEscola\EA\Lab1.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** DIODES
+
+
+NAME         D_D2        D_D3        D_D5        D_D4      
+MODEL        D1N4002     D1N4002     D1N4002     D1N4002   
+ID           6.22E-03   -1.43E-08    6.22E-03   -1.43E-08 
+VD           6.67E-01   -3.11E+00    6.67E-01   -3.11E+00 
+REQ          8.25E+00    1.77E+11    8.25E+00    1.77E+11 
+CAP          5.78E-07    2.79E-11    5.78E-07    2.79E-11 
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .03
+

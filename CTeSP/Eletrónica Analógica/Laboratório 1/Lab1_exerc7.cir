@@ -1,0 +1,25 @@
+* C:\Users\Diogo Silva\Desktop\VideoEscola\EA\Lab1_exerc7.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Thu Apr 16 11:57:39 2020
+
+
+
+** Analysis setup **
+.ac LIN 101 10 1.00K
+.tran 0ns 5ms 0 1ns
+.OP 
+.STMLIB "Lab1_exerc7.stl"
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Lab1_exerc7.net"
+.INC "Lab1_exerc7.als"
+
+
+.probe
+
+
+.END

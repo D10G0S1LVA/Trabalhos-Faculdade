@@ -1,0 +1,180 @@
+
+**** 04/16/20 11:53:24 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Diogo Silva\Desktop\VideoEscola\EA\Lab1_exerc8.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Wed Apr 15 20:41:54 2020
+
+
+
+** Analysis setup **
+.tran 0ns 20s 0 1000ms
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "Lab1_exerc8.net"
+
+**** INCLUDING Lab1_exerc8.net ****
+* Schematics Netlist *
+
+
+
+V_V1         $N_0001 0 5V
+D_D1         $N_0001 $N_0002 D1N4002 
+C_C1         $N_0003 $N_0002  100n  
+V_V2         $N_0003 0  
++SIN 0 10V 1000Hz 0 0 0
+
+**** RESUMING Lab1_exerc8.cir ****
+.INC "Lab1_exerc8.als"
+
+
+
+**** INCLUDING Lab1_exerc8.als ****
+* Schematics Aliases *
+
+.ALIASES
+V_V1            V1(+=$N_0001 -=0 )
+D_D1            D1(1=$N_0001 2=$N_0002 )
+C_C1            C1(1=$N_0003 2=$N_0002 )
+V_V2            V2(+=$N_0003 -=0 )
+.ENDALIASES
+
+
+**** RESUMING Lab1_exerc8.cir ****
+.probe
+
+
+.END
+
+**** 04/16/20 11:53:24 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Diogo Silva\Desktop\VideoEscola\EA\Lab1_exerc8.sch
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4002         
+          IS   14.110000E-09 
+           N    1.984        
+         ISR  100.000000E-12 
+         IKF   94.81         
+          BV  100.1          
+         IBV   10            
+          RS     .03389      
+          TT    4.761000E-06 
+         CJO   51.170000E-12 
+          VJ     .3905       
+           M     .2762       
+
+
+**** 04/16/20 11:53:24 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Diogo Silva\Desktop\VideoEscola\EA\Lab1_exerc8.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    5.0000                   ($N_0002)    5.0000                       
+
+($N_0003)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V2         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+**** 04/16/20 11:53:24 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Diogo Silva\Desktop\VideoEscola\EA\Lab1_exerc8.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** DIODES
+
+
+NAME         D_D1      
+MODEL        D1N4002   
+ID           2.41E-20 
+VD           8.70E-14 
+REQ          3.61E+06 
+CAP          5.25E-11 
+**** 04/16/20 11:53:24 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\Diogo Silva\Desktop\VideoEscola\EA\Lab1_exerc8.sch
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    5.0000                   ($N_0002)    5.0000                       
+
+($N_0003)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V2         0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME           35.48
+

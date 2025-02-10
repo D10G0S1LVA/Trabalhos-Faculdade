@@ -1,0 +1,9 @@
+* Schematics Netlist *
+
+
+
+V_VCC         $N_0001 0 10V
+R_Rb         $N_0003 $N_0002  47k  
+R_Rc         $N_0004 $N_0001  180  
+Q_Q2         $N_0004 $N_0003 0 Q2N2222
+V_VBB         $N_0002 0 1.10V

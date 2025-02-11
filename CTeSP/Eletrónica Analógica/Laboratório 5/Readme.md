@@ -1,4 +1,4 @@
-# Laboratório 4 de Eletrónica Analógica
+# Laboratório 5 de Eletrónica Analógica
 
 Neste laboratório e os restantes laboratórios da Unidade Curricular conterão vários ficheiros, pois, cada laboratório analizou-se um conjunto de circuitos.
 

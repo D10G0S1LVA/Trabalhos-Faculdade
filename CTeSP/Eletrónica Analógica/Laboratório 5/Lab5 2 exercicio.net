@@ -1,0 +1,9 @@
+* Schematics Netlist *
+
+
+
+V_VCC         $N_0001 0 12V
+R_R1         0 $N_0002  4.5k  
+M_M1         $N_0002 $N_0002 $N_0001 $N_0001 Mbreakp           
+M_M2         $N_0003 $N_0002 $N_0001 $N_0001 Mbreakp           
+R_RL         0 $N_0003  3.3K  

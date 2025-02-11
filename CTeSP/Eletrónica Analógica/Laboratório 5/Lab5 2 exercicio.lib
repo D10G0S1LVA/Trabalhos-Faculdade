@@ -1,0 +1,2 @@
+.model Mbreakp PMOS( Kp={2*0.5m}, Vto=-1V, lambda=0.01) 
+*$

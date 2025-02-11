@@ -1,0 +1,12 @@
+* Schematics Netlist *
+
+
+
+R_R1         $N_0002 $N_0001  1k  
+R_R3         $N_0003 $N_0001  1k  
+V_VCC         $N_0001 0 12V
+R_R2         0 $N_0004  1k  
+V_V1         $N_0005 0 12V
+V_V2         $N_0006 0 12V
+M_M5         $N_0004 $N_0006 $N_0003 $N_0003 Mbreakn           
+M_M7         $N_0002 $N_0005 $N_0004 $N_0004 MbreakP-X           

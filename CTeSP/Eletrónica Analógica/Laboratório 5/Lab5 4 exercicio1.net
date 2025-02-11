@@ -1,0 +1,9 @@
+* Schematics Netlist *
+
+
+
+C_C1         0 $N_0001  100n  
+M_M2         $N_0001 $N_0002 0 0 Mbreakn           
+V_VCC         $N_0003 0 10V
+M_M1         $N_0001 $N_0002 $N_0003 $N_0003 Mbreakp           
+V_V2         $N_0002 0 0V

@@ -1,0 +1,170 @@
+
+**** 07/06/20 15:41:29 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * D:\VideoEscola\Eletronica Analogica\Lab5 4 exercicio1.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.2
+* Mon Jul 06 15:41:26 2020
+
+
+
+** Analysis setup **
+.OP 
+.LIB "D:\VideoEscola\Eletronica Analogica\Lab5 4 exercicio1.lib"
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "nom.lib"
+
+.INC "Lab5 4 exercicio1.net"
+
+
+
+**** INCLUDING "Lab5 4 exercicio1.net" ****
+* Schematics Netlist *
+
+
+
+C_C1         0 $N_0001  100n  
+M_M2         $N_0001 $N_0002 0 0 Mbreakn           
+V_VCC         $N_0003 0 10V
+M_M1         $N_0001 $N_0002 $N_0003 $N_0003 Mbreakp           
+V_V2         $N_0002 0 0V
+
+**** RESUMING "Lab5 4 exercicio1.cir" ****
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END
+
+**** 07/06/20 15:41:29 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * D:\VideoEscola\Eletronica Analogica\Lab5 4 exercicio1.sch
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Mbreakn         Mbreakp         
+               NMOS            PMOS            
+       LEVEL    1               1            
+           L  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06 
+         VTO    1              -1            
+          KP    1.000000E-03    2.000000E-03 
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA    0               0            
+          IS   10.000000E-15   10.000000E-15 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO    0               0            
+        CGDO    0               0            
+        CGBO    0               0            
+         TOX    0               0            
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    0               0            
+       XPART    0               0            
+
+
+**** 07/06/20 15:41:29 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * D:\VideoEscola\Eletronica Analogica\Lab5 4 exercicio1.sch
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)   10.0000                   ($N_0002)    0.0000                       
+
+($N_0003)   10.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VCC       -1.001E-11
+    V_V2         0.000E+00
+
+    TOTAL POWER DISSIPATION   1.00E-10  WATTS
+
+
+**** 07/06/20 15:41:29 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * D:\VideoEscola\Eletronica Analogica\Lab5 4 exercicio1.sch
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** MOSFETS
+
+
+NAME         M_M2        M_M1      
+MODEL        Mbreakn     Mbreakp   
+ID           1.00E-11   -1.00E-11 
+VGS          0.00E+00   -1.00E+01 
+VDS          1.00E+01   -5.56E-10 
+VBS          0.00E+00    0.00E+00 
+VTH          1.00E+00   -1.00E+00 
+VDSAT        0.00E+00   -9.00E+00 
+Lin0/Sat1   -1.00E+00   -1.00E+00 
+if          -1.00E+00   -1.00E+00 
+ir          -1.00E+00   -1.00E+00 
+TAU         -1.00E+00   -1.00E+00 
+GM           0.00E+00    1.11E-12 
+GDS          0.00E+00    1.80E-02 
+GMB          0.00E+00    0.00E+00 
+CBD          0.00E+00    0.00E+00 
+CBS          0.00E+00    0.00E+00 
+CGSOV        0.00E+00    0.00E+00 
+CGDOV        0.00E+00    0.00E+00 
+CGBOV        0.00E+00    0.00E+00 
+CGS          0.00E+00    0.00E+00 
+CGD          0.00E+00    0.00E+00 
+CGB          0.00E+00    0.00E+00 
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

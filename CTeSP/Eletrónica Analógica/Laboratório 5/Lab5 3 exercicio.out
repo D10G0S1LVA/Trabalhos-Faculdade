@@ -1,0 +1,53 @@
+
+**** 07/06/20 13:16:52 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * D:\VideoEscola\Eletronica Analogica\Lab5 3 exercicio.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.2
+* Mon Jul 06 13:16:37 2020
+
+
+
+** Analysis setup **
+.OP 
+.LIB "D:\VideoEscola\Eletronica Analogica\Lab5 3 exercicio.lib"
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "nom.lib"
+
+.INC "Lab5 3 exercicio.net"
+
+
+
+**** INCLUDING "Lab5 3 exercicio.net" ****
+* Schematics Netlist *
+
+
+
+R_R1         $N_0002 $N_0001  1k  
+R_R3         $N_0003 $N_0001  1k  
+V_VCC         $N_0001 0 12V
+R_R2         0 $N_0004  1k  
+V_V1         $N_0005 0 12V
+V_V2         $N_0006 0 12V
+M_M5         $N_0004 $N_0006 $N_0003 $N_0003 Mbreakn           
+M_M7         $N_0002 $N_0005 $N_0004 $N_0004 MbreakP-X           
+
+**** RESUMING "Lab5 3 exercicio.cir" ****
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END
+
+
+ERROR -- Model MbreakP-X used by M_M7 is undefined

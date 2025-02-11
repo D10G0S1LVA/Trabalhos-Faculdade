@@ -1,0 +1,2 @@
+.model Mbreakn NMOS( Kp={2*10m}, Vto=2V, lambda=0.02) 
+*$

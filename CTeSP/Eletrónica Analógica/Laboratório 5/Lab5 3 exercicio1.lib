@@ -1,0 +1,4 @@
+.model MbreakP-X PMOS( Kp={2*1m}, Vto=-3, lambda=0) 
+*$
+.model MbreakN-X NMOS( Kp={2*1m}, Vto=3, lambda=0) 
+*$

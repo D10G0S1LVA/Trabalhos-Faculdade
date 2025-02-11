@@ -1,0 +1,558 @@
+
+**** 07/06/20 14:49:24 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * D:\VideoEscola\Eletronica Analogica\Lab5 4 exercicio.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.2
+* Mon Jul 06 14:48:54 2020
+
+
+
+** Analysis setup **
+.OP 
+.LIB "D:\VideoEscola\Eletronica Analogica\Lab5 4 exercicio.lib"
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "nom.lib"
+
+.INC "Lab5 4 exercicio.net"
+
+
+
+**** INCLUDING "Lab5 4 exercicio.net" ****
+* Schematics Netlist *
+
+
+
+C_C1         0 $N_0001  100n  
+V_VCC         $N_0002 0 10V
+M_M1         $N_0001 $N_0003 $N_0002 $N_0002 Mbreakn           
+V_Vi         $N_0003 0 10V
+M_M2         $N_0001 $N_0003 0 0 MbreakP-X           
+
+**** RESUMING "Lab5 4 exercicio.cir" ****
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END
+
+**** 07/06/20 14:49:24 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ * D:\VideoEscola\Eletronica Analogica\Lab5 4 exercicio.sch
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Mbreakn         MbreakP-X       
+               NMOS            PMOS            
+       LEVEL    1               1            
+           L  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06 
+         VTO   -1               1            
+          KP    2.000000E-03    1.000000E-03 
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA    0               0            
+          IS   10.000000E-15   10.000000E-15 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO    0               0            
+        CGDO    0               0            
+        CGBO    0               0            
+         TOX    0               0            
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    0               0            
+       XPART    0               0            
+
+
+ERROR -- Convergence problem in bias point calculation
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    1.4293                   ($N_0002)    2.8586                       
+
+($N_0003)    2.8586                   
+
+
+  These supply currents failed to converge:
+
+    I(V_VCC)                  =   -10.00GA  \   -10.00GA
+
+Try running with .OPTION STEPGMIN
+
+ **** Runtime Parameters
+                              
+      ABSTOL =      1.0000E-12
+        GMIN =      1.0000E-12
+        ITL1 =      1.5000E+02
+        ITL2 =      2.0000E+01
+        ITL4 =      1.0000E+01
+      RELTOL =      1.0000E-03
+      RUNFOR =      0.0000E+00
+        TMAX =      0.0000E+00
+       TSTOP =      1.0000E-09
+       VNTOL =      1.0000E-06
+              
+               
+
+ERROR -- Convergence problem in bias point calculation
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    1.4293                   ($N_0002)    2.8586                       
+
+($N_0003)    2.8586                   
+
+
+  These supply currents failed to converge:
+
+    I(V_VCC)                  =   -10.00GA  \   -10.00GA
+
+Try running with .OPTION STEPGMIN
+
+ **** Runtime Parameters
+                              
+      ABSTOL =      1.0000E-12
+        GMIN =      1.0000E-12
+        ITL1 =      1.5000E+02
+        ITL2 =      2.0000E+01
+        ITL4 =      1.0000E+01
+      RELTOL =      1.0000E-03
+      RUNFOR =      0.0000E+00
+        TMAX =      0.0000E+00
+       TSTOP =      1.0000E-09
+       VNTOL =      1.0000E-06
+              
+               
+
+ERROR -- Convergence problem in bias point calculation
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    1.4293                   ($N_0002)    2.8586                       
+
+($N_0003)    2.8586                   
+
+
+  These supply currents failed to converge:
+
+    I(V_VCC)                  =   -10.00GA  \   -10.00GA
+
+Try running with .OPTION STEPGMIN
+
+ **** Runtime Parameters
+                              
+      ABSTOL =      1.0000E-12
+        GMIN =      1.0000E-12
+        ITL1 =      1.5000E+02
+        ITL2 =      2.0000E+01
+        ITL4 =      1.0000E+01
+      RELTOL =      1.0000E-03
+      RUNFOR =      0.0000E+00
+        TMAX =      0.0000E+00
+       TSTOP =      1.0000E-09
+       VNTOL =      1.0000E-06
+              
+               
+
+ERROR -- Convergence problem in bias point calculation
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    1.4293                   ($N_0002)    2.8586                       
+
+($N_0003)    2.8586                   
+
+
+  These supply currents failed to converge:
+
+    I(V_VCC)                  =   -10.00GA  \   -10.00GA
+
+Try running with .OPTION STEPGMIN
+
+ **** Runtime Parameters
+                              
+      ABSTOL =      1.0000E-12
+        GMIN =      1.0000E-12
+        ITL1 =      1.5000E+02
+        ITL2 =      2.0000E+01
+        ITL4 =      1.0000E+01
+      RELTOL =      1.0000E-03
+      RUNFOR =      0.0000E+00
+        TMAX =      0.0000E+00
+       TSTOP =      1.0000E-09
+       VNTOL =      1.0000E-06
+              
+               
+
+ERROR -- Convergence problem in bias point calculation
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    1.4293                   ($N_0002)    2.8586                       
+
+($N_0003)    2.8586                   
+
+
+  These supply currents failed to converge:
+
+    I(V_VCC)                  =   -10.00GA  \   -10.00GA
+
+Try running with .OPTION STEPGMIN
+
+ **** Runtime Parameters
+                              
+      ABSTOL =      1.0000E-12
+        GMIN =      1.0000E-12
+        ITL1 =      1.5000E+02
+        ITL2 =      2.0000E+01
+        ITL4 =      1.0000E+01
+      RELTOL =      1.0000E-03
+      RUNFOR =      0.0000E+00
+        TMAX =      0.0000E+00
+       TSTOP =      1.0000E-09
+       VNTOL =      1.0000E-06
+              
+               
+
+ERROR -- Convergence problem in bias point calculation
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    1.4293                   ($N_0002)    2.8586                       
+
+($N_0003)    2.8586                   
+
+
+  These supply currents failed to converge:
+
+    I(V_VCC)                  =   -10.00GA  \   -10.00GA
+
+Try running with .OPTION STEPGMIN
+
+ **** Runtime Parameters
+                              
+      ABSTOL =      1.0000E-12
+        GMIN =      1.0000E-12
+        ITL1 =      1.5000E+02
+        ITL2 =      2.0000E+01
+        ITL4 =      1.0000E+01
+      RELTOL =      1.0000E-03
+      RUNFOR =      0.0000E+00
+        TMAX =      0.0000E+00
+       TSTOP =      1.0000E-09
+       VNTOL =      1.0000E-06
+              
+               
+
+ERROR -- Convergence problem in bias point calculation
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    1.4293                   ($N_0002)    2.8586                       
+
+($N_0003)    2.8586                   
+
+
+  These supply currents failed to converge:
+
+    I(V_VCC)                  =   -10.00GA  \   -10.00GA
+
+Try running with .OPTION STEPGMIN
+
+ **** Runtime Parameters
+                              
+      ABSTOL =      1.0000E-12
+        GMIN =      1.0000E-12
+        ITL1 =      1.5000E+02
+        ITL2 =      2.0000E+01
+        ITL4 =      1.0000E+01
+      RELTOL =      1.0000E-03
+      RUNFOR =      0.0000E+00
+        TMAX =      0.0000E+00
+       TSTOP =      1.0000E-09
+       VNTOL =      1.0000E-06
+              
+               
+
+ERROR -- Convergence problem in bias point calculation
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    1.4293                   ($N_0002)    2.8586                       
+
+($N_0003)    2.8586                   
+
+
+  These supply currents failed to converge:
+
+    I(V_VCC)                  =   -10.00GA  \   -10.00GA
+
+Try running with .OPTION STEPGMIN
+
+ **** Runtime Parameters
+                              
+      ABSTOL =      1.0000E-12
+        GMIN =      1.0000E-12
+        ITL1 =      1.5000E+02
+        ITL2 =      2.0000E+01
+        ITL4 =      1.0000E+01
+      RELTOL =      1.0000E-03
+      RUNFOR =      0.0000E+00
+        TMAX =      0.0000E+00
+       TSTOP =      1.0000E-09
+       VNTOL =      1.0000E-06
+              
+               
+
+ERROR -- Convergence problem in bias point calculation
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    1.4293                   ($N_0002)    2.8586                       
+
+($N_0003)    2.8586                   
+
+
+  These supply currents failed to converge:
+
+    I(V_VCC)                  =   -10.00GA  \   -10.00GA
+
+Try running with .OPTION STEPGMIN
+
+ **** Runtime Parameters
+                              
+      ABSTOL =      1.0000E-12
+        GMIN =      1.0000E-12
+        ITL1 =      1.5000E+02
+        ITL2 =      2.0000E+01
+        ITL4 =      1.0000E+01
+      RELTOL =      1.0000E-03
+      RUNFOR =      0.0000E+00
+        TMAX =      0.0000E+00
+       TSTOP =      1.0000E-09
+       VNTOL =      1.0000E-06
+              
+               
+
+ERROR -- Convergence problem in bias point calculation
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    1.4293                   ($N_0002)    2.8586                       
+
+($N_0003)    2.8586                   
+
+
+  These supply currents failed to converge:
+
+    I(V_VCC)                  =   -10.00GA  \   -10.00GA
+
+Try running with .OPTION STEPGMIN
+
+ **** Runtime Parameters
+                              
+      ABSTOL =      1.0000E-12
+        GMIN =      1.0000E-12
+        ITL1 =      1.5000E+02
+        ITL2 =      2.0000E+01
+        ITL4 =      1.0000E+01
+      RELTOL =      1.0000E-03
+      RUNFOR =      0.0000E+00
+        TMAX =      0.0000E+00
+       TSTOP =      1.0000E-09
+       VNTOL =      1.0000E-06
+              
+               
+
+ERROR -- Convergence problem in bias point calculation
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    1.4293                   ($N_0002)    2.8586                       
+
+($N_0003)    2.8586                   
+
+
+  These supply currents failed to converge:
+
+    I(V_VCC)                  =   -10.00GA  \   -10.00GA
+
+Try running with .OPTION STEPGMIN
+
+ **** Runtime Parameters
+                              
+      ABSTOL =      1.0000E-12
+        GMIN =      1.0000E-12
+        ITL1 =      1.5000E+02
+        ITL2 =      2.0000E+01
+        ITL4 =      1.0000E+01
+      RELTOL =      1.0000E-03
+      RUNFOR =      0.0000E+00
+        TMAX =      0.0000E+00
+       TSTOP =      1.0000E-09
+       VNTOL =      1.0000E-06
+              
+               
+
+ERROR -- Convergence problem in bias point calculation
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    1.4293                   ($N_0002)    2.8586                       
+
+($N_0003)    2.8586                   
+
+
+  These supply currents failed to converge:
+
+    I(V_VCC)                  =   -10.00GA  \   -10.00GA
+
+Try running with .OPTION STEPGMIN
+
+ **** Runtime Parameters
+                              
+      ABSTOL =      1.0000E-12
+        GMIN =      1.0000E-12
+        ITL1 =      1.5000E+02
+        ITL2 =      2.0000E+01
+        ITL4 =      1.0000E+01
+      RELTOL =      1.0000E-03
+      RUNFOR =      0.0000E+00
+        TMAX =      0.0000E+00
+       TSTOP =      1.0000E-09
+       VNTOL =      1.0000E-06
+              
+               
+
+ERROR -- Convergence problem in bias point calculation
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    1.4293                   ($N_0002)    2.8586                       
+
+($N_0003)    2.8586                   
+
+
+  These supply currents failed to converge:
+
+    I(V_VCC)                  =   -10.00GA  \   -10.00GA
+
+Try running with .OPTION STEPGMIN
+
+ **** Runtime Parameters
+                              
+      ABSTOL =      1.0000E-12
+        GMIN =      1.0000E-12
+        ITL1 =      1.5000E+02
+        ITL2 =      2.0000E+01
+        ITL4 =      1.0000E+01
+      RELTOL =      1.0000E-03
+      RUNFOR =      0.0000E+00
+        TMAX =      0.0000E+00
+       TSTOP =      1.0000E-09
+       VNTOL =      1.0000E-06
+              
+               
+
+ERROR -- Convergence problem in bias point calculation
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($N_0001)    1.4293                   ($N_0002)    2.8586                       
+
+($N_0003)    2.8586                   
+
+
+  These supply currents failed to converge:
+
+    I(V_VCC)                  =   -10.00GA  \   -10.00GA
+
+Try running with .OPTION STEPGMIN
+
+          JOB ABORTED
+
+          TOTAL JOB TIME           28.08
+

@@ -1,0 +1,7 @@
+* PSpice Model Editor - Version 9.2
+
+*$
+.model Mbreakn NMOS{ Kp={2*1m}, Vto=-3V, lambda=0.01} 
+*$
+.model Mbreakp PMOS{ Kp={2*1m}, Vto=3V, lambda=0.01} 
+*$
